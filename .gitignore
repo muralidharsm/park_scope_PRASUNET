@@ -1,0 +1,8 @@
+# Raw datasets are large / not redistributable — never commit them
+data/*.csv
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+.DS_Store
