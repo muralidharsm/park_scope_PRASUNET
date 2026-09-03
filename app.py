@@ -209,7 +209,7 @@ with tab_map:
             hover_name="label",
             custom_data=["violations", "impact_score", "peak_hour_label", "top_violations"])
         fig.update_traces(hovertemplate=HOVER)
-        fig.update_layout(**MAP_LAYOUT, coloraxis_colorbar=dict(title=color_by))
+        fig.update_layout(**MAP_LAYOUT) fig.update_coloraxis(colorbar=dict(title=color_by)
         st.plotly_chart(fig, use_container_width=True)
     st.caption("Bubble size = ticket volume · colour (Inferno) = Congestion Impact Score. "
                "Hover any zone for its peak window and violation mix.")
